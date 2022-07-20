@@ -32,7 +32,7 @@ class BookCollectionViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BookCollectionViewCell", for: indexPath) as! BookCollectionViewCell
         
         cell.layer.cornerRadius = 20
-        cell.backgroundColor = .purple
+        cell.backgroundColor = .yellow
         
         return cell
     }

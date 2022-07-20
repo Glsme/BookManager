@@ -18,25 +18,51 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Lhf-p8-IlH">
-                            <size key="itemSize" width="128" height="128"/>
+                            <size key="itemSize" width="118" height="128"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BookCollectionViewCell" id="65T-I3-0n8" customClass="BookCollectionViewCell" customModule="BookManager" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                <rect key="frame" x="0.0" y="0.0" width="118" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7UP-qe-EDM">
-                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="118" height="128"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KWm-L6-7WW">
-                                            <rect key="frame" x="49" y="40" width="66" height="88"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KWm-L6-7WW">
+                                            <rect key="frame" x="45" y="46.5" width="53" height="81.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="KWm-L6-7WW" secondAttribute="height" multiplier="0.65" id="F9V-F5-7NV"/>
+                                            </constraints>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckz-z8-QHT">
+                                            <rect key="frame" x="8" y="17.5" width="102" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwb-7i-7Nb">
+                                            <rect key="frame" x="8" y="103" width="29" height="15"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="ckz-z8-QHT" secondAttribute="trailing" constant="8" id="8j8-Lz-9bz"/>
+                                        <constraint firstAttribute="bottom" secondItem="KWm-L6-7WW" secondAttribute="bottom" id="MdN-Nj-Ehi"/>
+                                        <constraint firstAttribute="bottom" secondItem="iwb-7i-7Nb" secondAttribute="bottom" constant="10" id="N3J-1v-D41"/>
+                                        <constraint firstItem="iwb-7i-7Nb" firstAttribute="leading" secondItem="7UP-qe-EDM" secondAttribute="leading" constant="8" id="UJY-1b-tbe"/>
+                                        <constraint firstItem="KWm-L6-7WW" firstAttribute="leading" secondItem="iwb-7i-7Nb" secondAttribute="trailing" constant="8" id="dG0-m7-WHh"/>
+                                        <constraint firstItem="ckz-z8-QHT" firstAttribute="leading" secondItem="7UP-qe-EDM" secondAttribute="leading" constant="8" id="dat-8D-283"/>
+                                        <constraint firstItem="KWm-L6-7WW" firstAttribute="width" secondItem="7UP-qe-EDM" secondAttribute="width" multiplier="0.45" id="y67-8V-YL0"/>
+                                        <constraint firstAttribute="trailing" secondItem="KWm-L6-7WW" secondAttribute="trailing" constant="20" id="y7t-CF-e9d"/>
+                                        <constraint firstItem="KWm-L6-7WW" firstAttribute="top" secondItem="ckz-z8-QHT" secondAttribute="bottom" constant="8" id="yhU-Ef-x28"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
+                                <size key="customSize" width="118" height="128"/>
                             </collectionViewCell>
                         </cells>
                         <connections>
