@@ -31,7 +31,7 @@ class BookCollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BookCollectionViewCell", for: indexPath) as! BookCollectionViewCell
         
-        cell.layer.cornerRadius = 16
+        cell.layer.cornerRadius = 20
         cell.backgroundColor = .purple
         
         return cell
