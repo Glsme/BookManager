@@ -36,7 +36,9 @@ class BookCollectionViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BookCollectionViewCell", for: indexPath) as! BookCollectionViewCell
         
         cell.layer.cornerRadius = 20
-        cell.backgroundColor = .orange
+        let color = indexPath.row % 2 == 0 ? UIColor.orange : UIColor.lightGray
+        cell.backgroundColor = color
+        cell.titleLabel.font = .boldSystemFont(ofSize: 16)
         
         let data = bookList.book[indexPath.row]
         cell.configureCell(data: data)
