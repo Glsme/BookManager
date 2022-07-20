@@ -15,6 +15,8 @@
 		8549689D2887D44000CCC8BD /* BookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549689C2887D44000CCC8BD /* BookCollectionViewCell.swift */; };
 		8549689F2887D46C00CCC8BD /* BookCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549689E2887D46B00CCC8BD /* BookCollectionViewController.swift */; };
 		854968A22887D91700CCC8BD /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 854968A12887D91700CCC8BD /* Kingfisher */; };
+		854968A4288807EA00CCC8BD /* BookData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854968A3288807EA00CCC8BD /* BookData.swift */; };
+		854968A62888093300CCC8BD /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854968A52888093300CCC8BD /* Book.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		854968962887D3CC00CCC8BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8549689C2887D44000CCC8BD /* BookCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCollectionViewCell.swift; sourceTree = "<group>"; };
 		8549689E2887D46B00CCC8BD /* BookCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCollectionViewController.swift; sourceTree = "<group>"; };
+		854968A3288807EA00CCC8BD /* BookData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookData.swift; sourceTree = "<group>"; };
+		854968A52888093300CCC8BD /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,8 @@
 				8549688E2887D3CB00CCC8BD /* Main.storyboard */,
 				8549689C2887D44000CCC8BD /* BookCollectionViewCell.swift */,
 				8549689E2887D46B00CCC8BD /* BookCollectionViewController.swift */,
+				854968A3288807EA00CCC8BD /* BookData.swift */,
+				854968A52888093300CCC8BD /* Book.swift */,
 				854968912887D3CC00CCC8BD /* Assets.xcassets */,
 				854968932887D3CC00CCC8BD /* LaunchScreen.storyboard */,
 				854968962887D3CC00CCC8BD /* Info.plist */,
@@ -149,7 +155,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				854968A4288807EA00CCC8BD /* BookData.swift in Sources */,
 				8549689D2887D44000CCC8BD /* BookCollectionViewCell.swift in Sources */,
+				854968A62888093300CCC8BD /* Book.swift in Sources */,
 				854968892887D3CB00CCC8BD /* AppDelegate.swift in Sources */,
 				8549688B2887D3CB00CCC8BD /* SceneDelegate.swift in Sources */,
 				8549689F2887D46C00CCC8BD /* BookCollectionViewController.swift in Sources */,
