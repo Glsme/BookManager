@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import Kingfisher
 
 class BookCollectionViewController: UICollectionViewController {
+    
+    let imageURL = "https://photo.jtbc.joins.com/news/jam_photo/202204/29/96c7a9af-a7cd-4a38-8b69-f60747d99d63.jpg"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +28,7 @@ class BookCollectionViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 8
+        return 10
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -33,6 +36,9 @@ class BookCollectionViewController: UICollectionViewController {
         
         cell.layer.cornerRadius = 20
         cell.backgroundColor = .yellow
+        
+        let  url = URL(string: imageURL)
+        cell.bookImageView.kf.setImage(with: url)
         
         return cell
     }

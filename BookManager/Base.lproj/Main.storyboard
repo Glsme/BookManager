@@ -38,7 +38,7 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckz-z8-QHT">
-                                            <rect key="frame" x="8" y="17.5" width="102" height="21"/>
+                                            <rect key="frame" x="20" y="17.5" width="78" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -51,18 +51,23 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="ckz-z8-QHT" secondAttribute="trailing" constant="8" id="8j8-Lz-9bz"/>
+                                        <constraint firstAttribute="trailing" secondItem="ckz-z8-QHT" secondAttribute="trailing" constant="20" id="8j8-Lz-9bz"/>
                                         <constraint firstAttribute="bottom" secondItem="KWm-L6-7WW" secondAttribute="bottom" id="MdN-Nj-Ehi"/>
                                         <constraint firstAttribute="bottom" secondItem="iwb-7i-7Nb" secondAttribute="bottom" constant="10" id="N3J-1v-D41"/>
                                         <constraint firstItem="iwb-7i-7Nb" firstAttribute="leading" secondItem="7UP-qe-EDM" secondAttribute="leading" constant="8" id="UJY-1b-tbe"/>
                                         <constraint firstItem="KWm-L6-7WW" firstAttribute="leading" secondItem="iwb-7i-7Nb" secondAttribute="trailing" constant="8" id="dG0-m7-WHh"/>
-                                        <constraint firstItem="ckz-z8-QHT" firstAttribute="leading" secondItem="7UP-qe-EDM" secondAttribute="leading" constant="8" id="dat-8D-283"/>
+                                        <constraint firstItem="ckz-z8-QHT" firstAttribute="leading" secondItem="7UP-qe-EDM" secondAttribute="leading" constant="20" id="dat-8D-283"/>
                                         <constraint firstItem="KWm-L6-7WW" firstAttribute="width" secondItem="7UP-qe-EDM" secondAttribute="width" multiplier="0.45" id="y67-8V-YL0"/>
                                         <constraint firstAttribute="trailing" secondItem="KWm-L6-7WW" secondAttribute="trailing" constant="20" id="y7t-CF-e9d"/>
                                         <constraint firstItem="KWm-L6-7WW" firstAttribute="top" secondItem="ckz-z8-QHT" secondAttribute="bottom" constant="8" id="yhU-Ef-x28"/>
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="118" height="128"/>
+                                <connections>
+                                    <outlet property="bookImageView" destination="KWm-L6-7WW" id="gRm-0A-5EI"/>
+                                    <outlet property="rateLabel" destination="iwb-7i-7Nb" id="qB6-XF-MG7"/>
+                                    <outlet property="titleLabel" destination="ckz-z8-QHT" id="nAL-47-mOP"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
