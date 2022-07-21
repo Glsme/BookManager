@@ -10,7 +10,6 @@ import Kingfisher
 
 class BookCollectionViewController: UICollectionViewController {
     
-    let imageURL = "https://photo.jtbc.joins.com/news/jam_photo/202204/29/96c7a9af-a7cd-4a38-8b69-f60747d99d63.jpg"
     var bookList = BookData()
 
     override func viewDidLoad() {
@@ -51,7 +50,7 @@ class BookCollectionViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let storyBoard = UIStoryboard(name: "BookDetail", bundle: nil)
-        let vc = storyBoard.instantiateViewController(withIdentifier: "BookDetailViewController") as! BookDetailViewController
+        let vc = storyBoard.instantiateViewController(withIdentifier: BookDetailViewController.identifier) as! BookDetailViewController
         
         self.navigationController?.pushViewController(vc, animated: true)
     }

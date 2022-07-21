@@ -8,22 +8,18 @@
 import UIKit
 
 class BookDetailViewController: UIViewController {
+    
+    static var identifier = "BookDetailViewController"
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+    }
+
+    @IBAction func webButtonClicked(_ sender: UIButton) {
+        let storyBoard = UIStoryboard(name: "BookWeb", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: BookWebViewController.identifier) as! BookWebViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

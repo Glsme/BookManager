@@ -21,6 +21,9 @@
                                 <rect key="frame" x="185.5" y="433" width="43" height="30"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="웹 이동"/>
+                                <connections>
+                                    <action selector="webButtonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Brh-8o-lwt"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
