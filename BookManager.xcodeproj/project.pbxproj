@@ -22,6 +22,7 @@
 		85730EA02889949100191995 /* BookSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85730E9F2889949100191995 /* BookSearch.storyboard */; };
 		85730EA22889973300191995 /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85730EA12889973300191995 /* BookDetailViewController.swift */; };
 		85730EA428899AA900191995 /* BookWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85730EA328899AA900191995 /* BookWebViewController.swift */; };
+		85730EA62889A17D00191995 /* BookSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85730EA52889A17D00191995 /* BookSearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		85730E9F2889949100191995 /* BookSearch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BookSearch.storyboard; sourceTree = "<group>"; };
 		85730EA12889973300191995 /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
 		85730EA328899AA900191995 /* BookWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookWebViewController.swift; sourceTree = "<group>"; };
+		85730EA52889A17D00191995 /* BookSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		854968872887D3CB00CCC8BD /* BookManager */ = {
 			isa = PBXGroup;
 			children = (
+				85730EA52889A17D00191995 /* BookSearchViewController.swift */,
 				854968882887D3CB00CCC8BD /* AppDelegate.swift */,
 				8549688A2887D3CB00CCC8BD /* SceneDelegate.swift */,
 				8549688E2887D3CB00CCC8BD /* Main.storyboard */,
@@ -174,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				854968A4288807EA00CCC8BD /* BookData.swift in Sources */,
+				85730EA62889A17D00191995 /* BookSearchViewController.swift in Sources */,
 				8549689D2887D44000CCC8BD /* BookCollectionViewCell.swift in Sources */,
 				854968A62888093300CCC8BD /* Book.swift in Sources */,
 				854968892887D3CB00CCC8BD /* AppDelegate.swift in Sources */,

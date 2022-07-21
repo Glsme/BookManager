@@ -54,4 +54,14 @@ class BookCollectionViewController: UICollectionViewController {
         
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    @IBAction func searchButtonClicked(_ sender: UIBarButtonItem) {
+        let storyBoard = UIStoryboard(name: "BookSearch", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: BookSearchViewController.identifier) as! BookSearchViewController
+        
+        let navigationController = UINavigationController(rootViewController: vc)
+        
+        navigationController.modalPresentationStyle = .fullScreen
+        self.present(navigationController, animated: true)
+//        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
