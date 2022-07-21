@@ -48,4 +48,11 @@ class BookCollectionViewController: UICollectionViewController {
         
         return cell
     }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let storyBoard = UIStoryboard(name: "BookDetail", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "BookDetailViewController") as! BookDetailViewController
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
