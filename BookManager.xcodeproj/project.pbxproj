@@ -76,7 +76,6 @@
 		854968872887D3CB00CCC8BD /* BookManager */ = {
 			isa = PBXGroup;
 			children = (
-				85730EA52889A17D00191995 /* BookSearchViewController.swift */,
 				854968882887D3CB00CCC8BD /* AppDelegate.swift */,
 				8549688A2887D3CB00CCC8BD /* SceneDelegate.swift */,
 				8549688E2887D3CB00CCC8BD /* Main.storyboard */,
@@ -85,8 +84,9 @@
 				85730E9F2889949100191995 /* BookSearch.storyboard */,
 				8549689C2887D44000CCC8BD /* BookCollectionViewCell.swift */,
 				8549689E2887D46B00CCC8BD /* BookCollectionViewController.swift */,
-				85730EA328899AA900191995 /* BookWebViewController.swift */,
 				85730EA12889973300191995 /* BookDetailViewController.swift */,
+				85730EA52889A17D00191995 /* BookSearchViewController.swift */,
+				85730EA328899AA900191995 /* BookWebViewController.swift */,
 				854968A3288807EA00CCC8BD /* BookData.swift */,
 				854968A52888093300CCC8BD /* Book.swift */,
 				854968912887D3CC00CCC8BD /* Assets.xcassets */,
